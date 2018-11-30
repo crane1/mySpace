@@ -9,3 +9,25 @@ function getCurTime(){
 
 	return year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second;
 }
+
+function sendCmdStr(action, jsonData, callBack){
+	var sendData = {}
+	sendData.action = action;
+	sendData.data = jsonData;
+
+	$.ajax({
+		type: "POST",
+		url: "/cgi",
+		data: JSON.stringify(sendData),
+		processData: false,
+		dataType: "json",
+		contentType: "application/json",
+		success: function(data){
+			console.log("response success")
+			if(callBack){
+				callBack(data);
+			}
+		}
+	});
+
+}
