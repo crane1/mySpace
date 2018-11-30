@@ -1,0 +1,131 @@
+.top-fix-bar{
+	height: 41px;
+	background-color:rgba(255,255,255);
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	font-size: 1em;
+}
+.top-fix-container{
+	height: 41px;
+	line-height: 41px;
+	width: 60%;
+	margin: 0 auto ;
+}
+.top-nav{
+	list-style: none;
+}
+.nav-list{
+	display: inline;
+}
+.nav-list-inner{
+	display: inline;
+}
+.nav-hover{
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	display: inline-block;
+}
+.nav-hover:hover{
+	height: 41px;
+	line-height: 41px;
+	display: inline-block;
+	background-color:rgba(255,255,255,0.7);
+}
+.mr10{
+	margin-right: 10px;
+}
+.layout-container{
+	width: 98%;
+	margin: 0 auto ;
+	background-color:rgba(255,255,255,0.5);
+	color: black;
+	position: relative;
+	top: 42px;
+	z-index: 10;
+	padding: 1%;
+
+}
+.head-description{
+	margin-top: 5px;
+}
+.discription-text{
+}
+.head-detail{
+	font-size: 1em;
+}
+.head-image{
+	float: left;
+}
+.head-usr-img{
+	width: 100px;
+	height: 100px;
+	border: 3px solid #ffc;
+}
+.item-hover{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	font
+}
+.item-hover:hover{
+	text-decoration: underline;
+}
+.haed-nav{
+	padding-left: 2%;
+	float: left;
+}
+.layout-main{
+	clear: both;
+}
+.layout-editor{
+	margin: 0 auto;
+	
+}
+.text-editor{
+	width: 98%;
+	border: 1px solid gray;
+}
+#talk-list{
+	
+	margin: 10px auto;
+
+}
+.ul-talk{
+	list-style: none;
+}
+.talk-item{
+	padding: 2%;
+	background-color: rgb(255,255,255,1);
+}
+.div-talk-content{
+	margin-top: 20px;
+}
+.talk-usr-img{
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+}
+.li-talk{
+	border: 1px solid gray;
+	margin: 10px 0;
+}
+.head-usrName{
+	height: 100px;
+	font-size: 2em;
+	float: left;
+}
+.text-usrname{
+	display: block;
+	position: relative;
+	top: 75px;
+}
+#btn_submit{
+	float: left;
+}
+#submit_tips{
+	height: 20px;
+	line-height: 20px;
+
+}
