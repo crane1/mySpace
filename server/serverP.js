@@ -4,10 +4,10 @@ var fs = require('fs');
 var url = require('url');
 var talk = require('./talk');
 
- 
- 
+
 // 创建服务器
-http.createServer( function (request, response) {  
+http.createServer( function (request, response) {
+	
 
    repWeb(request, response);
    
@@ -65,12 +65,23 @@ function handleCgiReq(request, response, pathname){
 	//-------注意异步-------------      
 	request.on('end',  function(){   //在end事件触发后，通过querystring.parse将post解析为真正的POST请求格式，然后向客户端返回。      
 		post = JSON.parse(post)
-		console.log(post);
-		talk.saveOneTalk(post.data);
-		 
-		response.writeHead(200, {'Content-Type': 'application/json'});
-		response.write("{\"data\": \"succeed\"}");
-		response.end();
+		console.log(post.action);
+		
+		resRouter(response, post)
+		
 	}); 
 }
+
+function resRouter(response, post){
+	switch(post.action){
+		case "webGetTalkList":
+			talk.getTalkList(response);
+			break;
+		case "webAddTalk":
+			talk.saveOneTalk(response, post.data);
+			break;
+	}
+
+}
+
 

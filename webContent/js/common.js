@@ -29,5 +29,4 @@ function sendCmdStr(action, jsonData, callBack){
 			}
 		}
 	});
-
 }
