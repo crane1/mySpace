@@ -1,0 +1,12 @@
+Finished plan:
+	1. Messege page
+	2. Using Ajax to realize front-end and back-end interaction
+	3. Using JSON file to store data
+
+Current plan:
+	1. Read JSON file to display user's talk
+
+Next plan:
+	1. User manage system:
+		1.1 register
+		1.2 sign in
