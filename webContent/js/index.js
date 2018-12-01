@@ -18,6 +18,13 @@
 
 	function handleSubmit(){
 		var subText = homePage.text_submit.val();
+		debugger;
+		if(!subText) {
+			var msg = "Please input your talk!";
+			showInfoMsgTime("error", msg, "submit_tips");
+			return;
+		}
+
 		var subTime = getCurTime();
 
 		var talk_item = {
@@ -29,11 +36,7 @@
 
 		sendCmdStr("webAddTalk", talk_item, function(){
 			sendCmdStr("webGetTalkList", "", loadTalkList);
-
-			$("#submit_tips").addClass("inlinebl").removeClass("hide");
-			window.setTimeout(function(){
-				$("#submit_tips").addClass("hide").removeClass("inlinebl");
-			}, 3000);
+			showInfoMsgTime("info", "Submit succeed", "submit_tips");
 		});
 
 	}

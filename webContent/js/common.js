@@ -30,3 +30,20 @@ function sendCmdStr(action, jsonData, callBack){
 		}
 	});
 }
+
+function showInfoMsgTime(type, msg, id){
+	debugger;
+	var idselect = "#" + id;
+
+	if(type === "info"){
+		$(idselect).css("color", "green");
+	}else if(type === "error"){
+		$(idselect).css("color", "red");
+	}
+
+	$(idselect).html(msg);
+	$(idselect).addClass("inlinebl").removeClass("hide");
+	window.setTimeout(function(){
+		$(idselect).addClass("hide").removeClass("inlinebl");
+	}, 3000);
+}
