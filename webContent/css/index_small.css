@@ -42,7 +42,6 @@
 	background-color:rgba(255,255,255,0.5);
 	color: black;
 	position: relative;
-	top: 42px;
 	z-index: 10;
 	padding: 1%;
 
@@ -63,6 +62,23 @@
 	height: 100px;
 	border: 3px solid #ffc;
 }
+.head-usrname{
+	display: block;
+	position: relative;
+	height: 100px;
+	font-size: 2em;
+}
+#text-usrname{
+	position: absolute;
+	bottom: 0;
+}
+.nav-link{
+	padding: .5rem .3rem;
+}
+
+.nav-head{
+	clear: both;
+}
 .item-hover{
 	text-decoration: none;
 	color: black;
@@ -78,6 +94,7 @@
 }
 .layout-main{
 	clear: both;
+	margin-top: 10px;
 }
 .layout-editor{
 	margin: 0 auto;
@@ -110,19 +127,6 @@
 .li-talk{
 	border: 1px solid gray;
 	margin: 10px 0;
-}
-.head-usrName{
-	height: 100px;
-	font-size: 2em;
-	float: left;
-}
-.text-usrname{
-	display: block;
-	position: relative;
-	top: 75px;
-}
-#btn_submit{
-	
 }
 #submit_tips{
 	height: 20px;

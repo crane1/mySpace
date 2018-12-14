@@ -23,17 +23,3 @@
 .info{
 	color: green;
 }
-.btn{
-	border: 1px solid blue;
-	border-radius: 4px;
-	background-color: #F0FFFF;
-	width: 50px;
-	display: inline-block;
-}
-.btn:hover{
-	background-color: #EEEEEE;
-}
-.btn:active{
-    
-    background-color: #EEE685;
-}

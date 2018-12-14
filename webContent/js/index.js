@@ -18,10 +18,10 @@
 
 	function handleSubmit(){
 		var subText = homePage.text_submit.val();
-		debugger;
+		;
 		if(!subText) {
 			var msg = "Please input your talk!";
-			showInfoMsgTime("error", msg, "submit_tips");
+			showInfoMsgTime("warning", msg, "submit_tips");
 			return;
 		}
 
@@ -36,7 +36,7 @@
 
 		sendCmdStr("webAddTalk", talk_item, function(){
 			sendCmdStr("webGetTalkList", "", loadTalkList);
-			showInfoMsgTime("info", "Submit succeed", "submit_tips");
+			showInfoMsgTime("success", "Submit succeed", "submit_tips");
 		});
 
 	}
@@ -54,7 +54,7 @@
 		return '<li class="li-talk" id="liTalk' + index + '">' +
 				'<div class="talk-item">' +
 					'<div class="talk-head">' +
-						'<img class="talk-usr-img" src="webContent/img/user.jpg">' +
+						'<img class="talk-usr-img img-responsive" src="webContent/img/user.jpg">' +
 						'<span id="talk-submit-usr' + index + '">' + item.usrname + '</span>' +
 						'<span id="talk-submit-time' + index + '">' + item.time + '</span>' +
 					'</div>' +

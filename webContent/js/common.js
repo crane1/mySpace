@@ -32,18 +32,19 @@ function sendCmdStr(action, jsonData, callBack){
 }
 
 function showInfoMsgTime(type, msg, id){
-	debugger;
+	;
 	var idselect = "#" + id;
+	var showClass = "";
 
-	if(type === "info"){
-		$(idselect).css("color", "green");
-	}else if(type === "error"){
-		$(idselect).css("color", "red");
+	if(type === "success"){
+		showClass = "text-success";
+	}else if(type === "warning"){
+		showClass = "text-warning";
 	}
 
 	$(idselect).html(msg);
-	$(idselect).addClass("inlinebl").removeClass("hide");
+	$(idselect).addClass("inlinebl " + showClass).removeClass("hide");
 	window.setTimeout(function(){
-		$(idselect).addClass("hide").removeClass("inlinebl");
+		$(idselect).addClass("hide").removeClass("inlinebl " + showClass);
 	}, 3000);
 }
