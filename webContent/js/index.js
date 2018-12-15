@@ -18,7 +18,6 @@
 
 	function handleSubmit(){
 		var subText = homePage.text_submit.val();
-		;
 		if(!subText) {
 			var msg = "Please input your talk!";
 			showInfoMsgTime("warning", msg, "submit_tips");

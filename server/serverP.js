@@ -3,6 +3,8 @@ var http = require('http');
 var fs = require('fs');
 var url = require('url');
 var talk = require('./talk');
+var login = require('./login');
+var util = require('./commonCgi')
 
 
 // 创建服务器
@@ -35,26 +37,9 @@ function repWeb(request, response){
 		handleCgiReq(request, response, pathname);
 		return;
 	}
-	getFile(pathname, response, content, readType);
+	util.getFile(pathname, response, content, readType);
 }
 
-function getFile(pathname, response, content, readType){
-	console.log("getFile for " + pathname + " received.");
-	// 从文件系统中读取请求的文件内容
-   fs.readFile(pathname.substr(1), readType, function (err, data) {
-      if (err) {
-         console.log(err);
-         response.writeHead(404, content);
-      }else{    
-         response.writeHead(200, content);    
-         
-         // 响应文件内容
-         response.write(data, readType);
-      }
-      //  发送响应数据
-      response.end();
-   });   
-}
 
 function handleCgiReq(request, response, pathname){
 
@@ -80,6 +65,9 @@ function resRouter(response, post){
 		case "webAddTalk":
 			talk.saveOneTalk(response, post.data);
 			break;
+        case "webLogin":
+            login.login(response, post.data);
+            break;
 	}
 
 }

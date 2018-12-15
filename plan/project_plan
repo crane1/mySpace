@@ -1,14 +1,16 @@
 Now: 2018-12-1 08:34
 
-Finished plan:
-	1. Messege page
-	2. Using Ajax to realize front-end and back-end interaction
-	3. Using JSON file to store data
+已完成计划:
+	1. 说说页面
+	2. 使用ajax实现前后端交互
+	3. 使用json文件存储说说数据
+    4. 读取json文件并展示到说说页面
+    5. 使用bootstrap优化前端页面
 
-Current plan:
-	1. Read JSON file to display user's talk
-
-Next plan:
-	1. User manage system:
-		1.1 register
-		1.2 sign in
+当前计划:
+    用户管理系统：
+        用户登录
+        注册
+下个计划:
+    日志系统
+    相册系统

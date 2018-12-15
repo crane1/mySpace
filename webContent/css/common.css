@@ -1,5 +1,4 @@
 *{
-	border: 0;
 	padding: 0;
 	margin: 0;
 }
@@ -22,4 +21,10 @@
 }
 .info{
 	color: green;
+}
+.half{
+    width:50%;
+}
+.div-center{
+    margin: 0 auto;
 }

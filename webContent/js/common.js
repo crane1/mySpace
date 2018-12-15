@@ -48,3 +48,10 @@ function showInfoMsgTime(type, msg, id){
 		$(idselect).addClass("hide").removeClass("inlinebl " + showClass);
 	}, 3000);
 }
+
+function showElement(element){
+	element.addClass("inlinebl").removeClass("hide");
+}
+function hideElement(element){
+	element.addClass("hide").removeClass("inlinebl");
+}

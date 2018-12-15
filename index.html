@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
-	<title>xiaosiban's space</title>
+	<title>小四瓣的空间</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="webContent/css/bootstrap.min.css">
@@ -11,41 +10,45 @@
 	<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 400px)" href="webContent/css/index_small.css">
 </head>
 <body class="bg-body">
-	<div class="layout-container">
+	<div class="container-fluid">
 		<div class="layout-head-inner">
+            <div class="top-fix-bar">
+                <span><a href="webContent/pages/login.html">登录</a></span>
+                <span><a href="webContent/pages/login.html">注册</a></span>
+            </div>
 			<div class="head-detail">
 				<div class="head-image">
 					<img class="head-usr-img img-responsive" src="webContent/img/user.jpg">
 				</div>
 				<div class="head-usrname">
-					<span id="text-usrname">xiaosiban</span>
+					<span id="text-usrname">小四瓣</span>
 				</div>
 			</div>
 			<div class="nav-head">
 				<ul class="nav nav-tabs">
 					<li class="nav-item">
-						<a href="#" class="nav-link">Home</a>
+						<a href="#" class="nav-link">主页</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Journal</a>
+						<a href="#" class="nav-link">日志</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Gallery</a>
+						<a href="#" class="nav-link">相册</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Message</a>
+						<a href="#" class="nav-link">留言板</a>
 					</li>
 					<li class="nav-item">
-						<a href="#" class="nav-link">Talk</a>
+						<a href="#" class="nav-link">说说</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="layout-main">
 			<div class="layout-editor">
-				<textarea class="text-editor" placeholder="Say something." id="text_submit"></textarea>
-				<div id="btn_submit" class="btn btn-info">submit</div>
-				<span id="submit_tips" class="hide">submit successd</span>
+				<textarea class="text-editor" placeholder="说点什么吧..." id="text_submit"></textarea>
+				<div id="btn_submit" class="btn btn-info">发布</div>
+				<span id="submit_tips" class="hide"></span>
 			</div>
 			<div id="talk-list">
 				<ul class="ul-talk" id="ulTalk">

@@ -1,10 +1,8 @@
 .top-fix-bar{
-	height: 41px;
+	height: 1.3rem;
 	background-color:rgba(255,255,255);
 	width: 100%;
-	position: fixed;
-	z-index: 100;
-	font-size: 1em;
+	font-size: 1rem;
 }
 .top-fix-container{
 	height: 41px;
@@ -52,7 +50,7 @@
 .discription-text{
 }
 .head-detail{
-	font-size: 1em;
+	font-size: 1rem;
 }
 .head-image{
 	float: left;
@@ -60,13 +58,13 @@
 .head-usr-img{
 	width: 100px;
 	height: 100px;
-	border: 3px solid #ffc;
+	border: 1px solid gray;
 }
 .head-usrname{
 	display: block;
 	position: relative;
 	height: 100px;
-	font-size: 2em;
+	font-size: 1.5rem;
 }
 #text-usrname{
 	position: absolute;
@@ -97,8 +95,7 @@
 	margin-top: 10px;
 }
 .layout-editor{
-	margin: 0 auto;
-	
+    margin: 0 auto;
 }
 .text-editor{
 	width: 98%;
@@ -133,3 +130,4 @@
 	line-height: 20px;
 
 }
+
